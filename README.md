@@ -1,3 +1,4 @@
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -7,64 +8,72 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Challenge details:  
+OurHotels is a hotel search solution that looks into many providers and displays results from all the available hotels, for now, we are aggregate from two providers: BestHotels and  TopHotel.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### What is required:
+Implement OurHotels service that should return results from both providers (BestHotels and TopHotel), the result should be a JSON response with a valid HTTP status code of all available hotels ordered by hotel rate.
+OurHotels API (the aggregator API which you are going to build):Request:
+    - from_date: ISO_LOCAL_DATE
+    - to_date: ISO_LOCAL_DATE
+    - city:  IATA code (AUH)
+    - adults_ number: integer number
+Response:
+    - provider: name of the provider (BestHotels or TopHotels)
+    - hotelName: Name of the hotel
+    - fare: fare per night
+    - amenities: array of strings
+Providers API details:BestHotel  API:
+Request:
+     - fromDate  ISO_LOCAL_DATE
+     - toDate   ISO_LOCAL_DATE
+     - city  IATA code (AUH)
+     - numberOfAdults: integer number
+Response:
+     - hotel: Name of the hotel
+      - hotelRate: Number from 1-5
+      - hotelFare: Total price rounded to 2 decimals
+      - roomAmenities: String of amenities separated by comma 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+TopHotels API: Request:
+     - from  ISO_INSTANT
+     - To  ISO_INSTANT
+     - city:  IATA code (AUH)
+     - adultsCount: integer number
+Response:
+     - hotelName: Name of the hotel
+     - rate: String of '*' (from 1 to 5)
+     - price: Price of the hotel per night
+     - discount: discount on the room (if available).
+     - amenities: array of strings.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+ ### What you need to implement:
+A solution that meets the above requirements.
+You should consider the scalability in your solution, which means if we are going to add a new provider in the future, that should apply in a minimum of changes and without affecting the current integration providers.
+a ready to integrate push notification service if a new hotel is added.
+Additional Instructions:
+Please make sure that your code:
+     - Documented
+     - Readable
+     - Covered by unit tests. You can also cover it with any other tests you want.
+    - Don't use a database in your implementation, it's just calling dummy URLs(example: “localhost:8080/CrazyHotels”).
 
-## Learning Laravel
+## Installation guide
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+CD into the directory of this project and run the following three commands:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1.  `cp .env.example .env` then update environment options.
+2. `composer install`
+3.  `php artisan migrate`
+4.  `php artisan db:seed`
 
-## Laravel Sponsors
+## Running test cases
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+CD into the directory of this project and run the following three commands:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Unit testing test cases `vendor/bin/phpunit tests/Unit/`
+2. Integration testing test cases`vendor/bin/phpunit tests/Feature/`
+3.  You can run all test cases`vendor/bin/phpunit tests`
 
 ## Code of Conduct
 
