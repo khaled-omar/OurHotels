@@ -34,9 +34,7 @@ abstract class BaseHotelsProviderService
         $filters = $this->dataMapper->mapFilters($filters);
 
         try {
-            // Fake the response to dummy URL.
             // Send request and return Mapped results into OutHotels standard data.
-            $this->fakeResponse();
             $response = Http::post($this->endpoint, $filters);
             $responseBody = json_decode($response->body());
 
@@ -47,22 +45,4 @@ abstract class BaseHotelsProviderService
             return collect();
         }
     }
-
-    /**
-     * Fake the response with dummy URL.
-     */
-    protected function fakeResponse(): void
-    {
-        // Stub a JSON response for endpoint.
-        Http::fake([
-            $this->endpoint => Http::response(['data' => $this->generateFakeHotels()], 200),
-        ]);
-    }
-
-    /**
-     * Return fake hotels.
-     *
-     * @return array $hotels
-     */
-    abstract protected function generateFakeHotels();
 }

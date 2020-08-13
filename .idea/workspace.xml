@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="267d84f6-3cb9-4558-a4c8-32e40a003463" name="Default Changelist" comment="" />
+    <list default="true" id="267d84f6-3cb9-4558-a4c8-32e40a003463" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Factories/BestHotelsDataFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Factories/TopHotelsDataFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/BaseHotelsProviderService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/BaseHotelsProviderService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/BestHotelsProviderService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/BestHotelsProviderService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TopHotelsProviderService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/TopHotelsProviderService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/ourhotels.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/ourhotels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +25,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,6 +135,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1fumd8vu2rTXDcj8YvFY1t3MJpu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -127,8 +144,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Contracts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
@@ -138,11 +156,25 @@
       <recent name="$PROJECT_DIR$/app/Contracts" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.tests">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine workingDirectory="$PROJECT_DIR$/tests">
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -168,7 +200,8 @@
       <updated>1597076436675</updated>
       <workItem from="1597076438702" duration="4104000" />
       <workItem from="1597147442903" duration="13785000" />
-      <workItem from="1597247557083" duration="10680000" />
+      <workItem from="1597247557083" duration="12569000" />
+      <workItem from="1597320480204" duration="15241000" />
     </task>
     <servers />
   </component>
@@ -176,18 +209,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="50" width="387" height="620" key="#com.intellij.ide.util.MemberChooser" timestamp="1597250267316">
+    <state x="268" y="18" width="824" height="679" key="#CLI_Interpreters" timestamp="1597337970302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="484" y="50" width="387" height="620" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597250267316" />
+    <state x="268" y="18" width="824" height="679" key="#CLI_Interpreters/0.0.1366.728@0.0.1366.728" timestamp="1597337970302" />
+    <state x="484" y="50" width="387" height="620" key="#com.intellij.ide.util.MemberChooser" timestamp="1597336991651">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="50" width="387" height="620" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597336991651" />
     <state x="426" y="0" width="504" height="723" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597252989846">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="426" y="0" width="504" height="723" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1597252989846" />
-    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597252816346">
+    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597338928108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597252816346" />
+    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597338928108" />
     <state x="432" y="53" width="492" height="614" key="#com.jetbrains.php.refactoring.extract.interface.PhpExtractInterfaceDialog#" timestamp="1597251079243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -196,33 +233,57 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="427" y="0" width="501" height="723" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1366.728@0.0.1366.728" timestamp="1597155638487" />
-    <state x="427" y="0" width="501" height="723" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1597254751391">
+    <state x="427" y="0" width="501" height="723" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1597331424782">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="427" y="0" width="501" height="723" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1366.728@0.0.1366.728" timestamp="1597254751391" />
-    <state x="466" y="121" width="424" height="479" key="FileChooserDialogImpl" timestamp="1597250163798">
+    <state x="427" y="0" width="501" height="723" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1366.728@0.0.1366.728" timestamp="1597331424782" />
+    <state x="348" y="3" width="674" height="715" key="#tests" timestamp="1597338069209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="121" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597250163798" />
-    <state x="412" y="372" width="506" height="356" key="NewPhpClassDialog" timestamp="1597252796865">
+    <state x="348" y="3" width="674" height="715" key="#tests/0.0.1366.728@0.0.1366.728" timestamp="1597338069209" />
+    <state x="466" y="121" width="424" height="479" key="FileChooserDialogImpl" timestamp="1597338066592">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="412" y="372" width="506" height="356" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597252796865" />
+    <state x="466" y="121" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597338066592" />
+    <state width="1324" height="173" key="GridCell.Tab.0.bottom" timestamp="1597338531319">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="173" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597338531319" />
+    <state width="1324" height="173" key="GridCell.Tab.0.center" timestamp="1597338531318">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="173" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597338531318" />
+    <state width="1324" height="173" key="GridCell.Tab.0.left" timestamp="1597338531317">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="173" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597338531317" />
+    <state width="1324" height="173" key="GridCell.Tab.0.right" timestamp="1597338531319">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="173" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597338531319" />
+    <state x="412" y="372" width="506" height="356" key="NewPhpClassDialog" timestamp="1597335643464">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="372" width="506" height="356" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597335643464" />
     <state x="187" y="0" key="SettingsEditor" timestamp="1597151168160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597151168160" />
-    <state width="498" height="445" key="SwitcherDM" timestamp="1597261499291">
+    <state width="498" height="445" key="SwitcherDM" timestamp="1597340942504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="445" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1597261499291" />
-    <state x="347" y="160" key="run.anything.popup" timestamp="1597248547832">
+    <state width="498" height="445" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1597340942504" />
+    <state x="359" y="105" width="647" height="516" key="find.popup" timestamp="1597339128112">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="347" y="160" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597248547832" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597261411450">
+    <state x="359" y="105" width="647" height="516" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597339128112" />
+    <state x="347" y="160" key="run.anything.popup" timestamp="1597337121673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597261411450" />
+    <state x="347" y="160" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597337121673" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597339199200">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597339199200" />
   </component>
 </project>

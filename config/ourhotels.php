@@ -11,7 +11,7 @@ return [
      |
      */
     "providers" => [
-        \App\Services\TopHotelsProviderService::class,
         \App\Services\BestHotelsProviderService::class,
+        \App\Services\TopHotelsProviderService::class,
     ],
 ];
