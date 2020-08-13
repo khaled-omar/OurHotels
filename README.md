@@ -13,49 +13,52 @@ OurHotels is a hotel search solution that looks into many providers and displays
 
 ### What is required:
 Implement OurHotels service that should return results from both providers (BestHotels and TopHotel), the result should be a JSON response with a valid HTTP status code of all available hotels ordered by hotel rate.
-OurHotels API (the aggregator API which you are going to build):Request:
+#### OurHotels API (the aggregator API which you are going to build):
+##### Request:
     - from_date: ISO_LOCAL_DATE
     - to_date: ISO_LOCAL_DATE
     - city:  IATA code (AUH)
     - adults_ number: integer number
-Response:
+##### Response:
     - provider: name of the provider (BestHotels or TopHotels)
     - hotelName: Name of the hotel
     - fare: fare per night
     - amenities: array of strings
-Providers API details:BestHotel  API:
-Request:
+#### Providers API details:BestHotel  API:
+##### Request:
      - fromDate  ISO_LOCAL_DATE
      - toDate   ISO_LOCAL_DATE
      - city  IATA code (AUH)
      - numberOfAdults: integer number
-Response:
+##### Response:
      - hotel: Name of the hotel
-      - hotelRate: Number from 1-5
-      - hotelFare: Total price rounded to 2 decimals
-      - roomAmenities: String of amenities separated by comma 
+     - hotelRate: Number from 1-5
+     - hotelFare: Total price rounded to 2 decimals
+     - roomAmenities: String of amenities separated by comma 
 
-TopHotels API: Request:
+#### TopHotels API: 
+##### Request:
      - from  ISO_INSTANT
      - To  ISO_INSTANT
      - city:  IATA code (AUH)
      - adultsCount: integer number
-Response:
+##### Response:
      - hotelName: Name of the hotel
      - rate: String of '*' (from 1 to 5)
      - price: Price of the hotel per night
      - discount: discount on the room (if available).
      - amenities: array of strings.
 
- ### What you need to implement:
-A solution that meets the above requirements.
-You should consider the scalability in your solution, which means if we are going to add a new provider in the future, that should apply in a minimum of changes and without affecting the current integration providers.
-a ready to integrate push notification service if a new hotel is added.
-Additional Instructions:
-Please make sure that your code:
-     - Documented
-     - Readable
-     - Covered by unit tests. You can also cover it with any other tests you want.
+### What you need to implement:
+    - A solution that meets the above requirements.
+    - You should consider the scalability in your solution, which means if we are going to add a new provider in the future, that should apply in a minimum of changes and without affecting the current integration providers.
+    - a ready to integrate push notification service if a new hotel is added.
+
+#### Additional Instructions:
+##### Please make sure that your code:
+    - Documented
+    - Readable
+    - Covered by unit tests. You can also cover it with any other tests you want.
     - Don't use a database in your implementation, it's just calling dummy URLs(example: “localhost:8080/CrazyHotels”).
 
 ## Installation guide
